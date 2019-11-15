@@ -69,8 +69,7 @@ public class BuildUserStep extends Step {
 		@Override
 		public Set<? extends Class<?>> getRequiredContext() {
 			return new HashSet(Arrays.asList(
-				Run.class, // for the build get the user information from
-				FilePath.class // must run on an agent
+				Run.class // for the build get the user information from
 			));
 		}
 
